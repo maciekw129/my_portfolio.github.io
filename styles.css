@@ -1,6 +1,7 @@
 /* GENERAL STYLES */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -8,34 +9,90 @@
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0 2rem;
+    background-color: #0D8263;
 }
 
 .flex {
     display: flex;
-    align-items: center;
 }
 
 /* HEADER */
 
 header {
+    position: relative;
     width: 100%;
+    height: 5rem;
     justify-content: space-between;
-    border: 1px solid black;
+    align-items: center;
+    border: 3px solid #761A82;
     border-top: none;
-    box-shadow: 0.1rem 0.1rem;
+    background-color: whitesmoke;
 }
 
-header p {
-    border-left: 0.2rem dotted black;
-    padding-left: 10rem;
-    font-size: 125%;
+header h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 250%;
+    margin-left: 1.5rem;
 }
 
-header h1, header nav {
-    padding: 2rem 8.5rem;
+#menu_button {
+    font-size: 140%;
+    transition: background-color 0.2s linear;
+    width: 10rem;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
-header nav ul {
+#menu_button:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.2s linear;
+}
+
+header h1, #menu_button{
+    padding: 0;
+}
+
+/* NAV BAR */
+
+nav {
     display: none;
+    position: absolute;
+    right: 0rem;
+    top: 4.88rem;
+    width: 10rem;
+    height: 20rem;
+    transition: display 1s linear;
 }
 
+nav ul {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    height: 25%;
+    border: 1.5px solid #761A82;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s linear;
+    justify-self: center;
+    padding: 
+}
+
+nav ul li a:hover {
+    color: #0D8263;
+    transition: color 0.2s linear;
+}
