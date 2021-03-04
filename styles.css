@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #D9D8D7;
+    background-color: #ffffff;
     position: relative;
 }
 
@@ -29,7 +29,7 @@ article h2 {
     margin-bottom: 1rem;
 }
 
-article:before {
+article::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,7 +40,7 @@ article:before {
     border-left: 1px solid black;
 }
 
-article:after {
+article::after {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -60,20 +60,20 @@ header {
     height: 6.5rem;
     justify-content: space-between;
     align-items: center;
-    background-color: #025949;
+    background-color: #027353;
     z-index: 1;
-    border-bottom: 1px solid black;
+    box-shadow: 0 0.1rem 10px gray;
 }
 
 header h1 {
     margin-left: 3rem;
-    color: #d9d8d7;
+    color: #FFFFFF;
     position: relative;
     padding: 1rem;
     
 }
 
-header h1:before {
+header h1::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -84,7 +84,7 @@ header h1:before {
     border-left: 2px solid black;
 }
 
-header h1:after {
+header h1::after {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -106,7 +106,7 @@ header h1:after {
     color: #f5f5f5;
     position: relative;
 }
-#menu_button:after {
+#menu_button::after {
     position: absolute;
     content: "";
     left: 0;
@@ -144,12 +144,21 @@ nav ul {
 }
 
 nav ul li {
+    position: relative;
     height: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
     text-decoration: none;
+}
+
+nav ul li::after {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    border-bottom: 1px solid black;
+
 }
 
 nav ul li a {
@@ -171,53 +180,54 @@ nav ul li a:hover {
 
 /* ABOUT ME SECTION */
 
-.about_me {
+#about_me {
     position: relative;
     align-items: center;
     display: flex;
     width: 90%;
     padding: 2rem 0;
     margin: 0 auto;
-    padding-top: 11.5rem;
+    padding-top: 8.5rem;
     border-radius: 5px;
 }
 
-.about_me article {
+#about_me article {
     width: 50%;
 }
 
-.about_me img {
+#about_me img {
     width: 30%;
     height: auto;
     margin: 0 5rem;
-    border-radius: 2px;
-    border: 1px solid black;
+    border-radius: 5px;
 }
 
 /* MY SKILLS SECTION */
 
-.my_skills {
+#my_skills {
     width: 100%;
     height: auto;
-    background-color: #B8CAD9;
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    border: 1px solid black;
 }  
 
-.my_skills article h2 {
+#my_skills article h2 {
     text-align: center;
 }
 
-#skills_container {
+.skills_container {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 100%;
-    padding-top: 2rem;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: #B8CAD9;
+    border-radius: 5px;
 }
 
-#skills_container i {
+.skills_container i {
     font-size: 350%;
     
 }
