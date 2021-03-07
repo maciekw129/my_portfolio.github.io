@@ -4,10 +4,56 @@
         <meta charset="UTF-8">
         <title>My portfolio project</title>
         <meta name="description" content="Maciej Walecki's portfolio site. See my skills, projects and more!">
+        <script src="script.js" defer></script>
         <link href="styles.css" type="text/css" rel="stylesheet">
+        <link href="css/all.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Raleway&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        
+
+        <header>
+            <h1><a href="index.html">Maciej Walecki</a></h1>
+            <div id="menuButton">
+                <i class="fas fa-bars"></i>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">About Me</a></li>
+                        <li><a href="index.html#mySkills">My skills</a></li>
+                        <li><a href="my_projects.html">My projects</a></li>
+                        <li><a href="my_projects.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="myProjects">
+            <article>
+                <h2>My projects</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula accumsan purus, fermentum tincidunt enim. Integer facilisis lorem placerat condimentum volutpat. In et malesuada ex, at volutpat enim. Cras aliquet eros quis felis ornare tempus. Duis varius commodo metus imperdiet rutrum. Proin mollis enim vel nulla auctor fermentum. Mauris at tortor eu est posuere posuere sit amet nec lorem. Vivamus ac sagittis tellus. In sit amet commodo nibh.</p>
+            </article>
+            <ul>
+                <li id="floraTitle" class="projectTitle">Cafe Flora website <i id="floraArrow" class="fas fa-angle-down"></i></li>
+                <li><img id="flora" src="img/flora.jpg" alt="Flora project"></li>
+                <li id="kickboxingTitle" class="projectTitle">Kick-boxing Club website <i id="kickboxingArrow" class="fas fa-angle-down"></i></li>
+                <li><img id="kickboxing" src="img/kickboxingclub.jpg" alt="Kick-boxing project"></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <article>
+                <h2>Contact Me!</h2>
+                <p> If you like my content, please contact me! Here are a few places where You can find me.</p>
+            </article>
+            <div id="contactsContainer">
+                <ul>
+                    <li><strong>E-mail</strong> : maciejwalecki99@gmail.com<br><br><strong>Tel</strong>.: 123 456 789</li>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-github-square"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                </ul>
+            </div>
+        </section>
     </body>
 </html>
