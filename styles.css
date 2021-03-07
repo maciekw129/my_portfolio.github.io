@@ -29,7 +29,7 @@ article {
     padding: 2rem;
     position: relative;
 }
-
+ 
 article h2 {
     margin-bottom: 1rem;
 }
@@ -173,7 +173,7 @@ nav ul li a:hover {
     transition: background-color 0.1s linear;
 }
 
-#menuButton:hover nav, nav:hover {
+#menuButton:hover nav, nav:hover, #menuButton:focus ~ nav {
     transform: translateX(-10rem);
     transition: transform 0.2s ease-out;
 }
@@ -202,6 +202,11 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+@media only screen and (max-width: 500px) {
+    #aboutMe {
+        flex-direction: column;
+    }
+  }
 /* MY SKILLS SECTION */
 
 #mySkills {
@@ -241,7 +246,6 @@ nav ul li a:hover {
 }
 
 #myProjects article {
-    
     width: 30%;
 }
 
@@ -287,6 +291,22 @@ nav ul li a:hover {
     transition: transform 0.1s ease-in-out;
 }
 
+@media only screen and (max-width: 1200px) {
+
+    #myProjects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #myProjects article {
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    #myProjects ul {
+        width: 100%;
+    }
+}
 /* CONTACT ME SECTION */
 
 #contact {
@@ -312,4 +332,16 @@ nav ul li a:hover {
 
 #contactsContainer ul li i {
     font-size: 350%;
+}
+
+@media only screen and (max-width: 980px) {
+
+    #contact {
+        flex-direction: column;
+    }
+
+    #contact article {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 }
