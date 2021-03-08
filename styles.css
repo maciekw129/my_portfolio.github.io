@@ -8,8 +8,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #ffffff;
-    position: relative;
+    background-color: #f5f5f5;
 }
 
 h1 {
@@ -145,7 +144,6 @@ nav ul {
 }
 
 nav ul li {
-    position: relative;
     height: 25%;
     display: flex;
     justify-content: center;
@@ -173,22 +171,90 @@ nav ul li a:hover {
     transition: background-color 0.1s linear;
 }
 
-#menuButton:hover nav, nav:hover, #menuButton:focus ~ nav {
+/* for sliding nav */
+#menuButton:hover nav, nav:hover {
     transform: translateX(-10rem);
     transition: transform 0.2s ease-out;
+}
+
+@media only screen and (max-width: 560px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding-top: 1rem;
+    }
+
+    header h1 {
+        margin: 0;
+        margin-bottom: 0.75rem;
+    }
+
+    #menuButton {
+        width: auto;
+        visibility: hidden;
+    }
+    
+    nav {
+        visibility: visible;
+        position: static;
+        width: 120%;
+        height: auto;
+        margin-right: 22px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        content: 'h';
+    }
+
+    nav ul li a {
+        padding: 0.5rem;
+    }
+
+    #menuButton:hover nav, nav:hover {
+        transform: unset;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .toHide {
+        display: none;
+    }
+
+    nav ul li {
+        text-indent: -999px;
+    }
+
+    .next::after, .previous::after {
+        text-indent: 0;
+        font-size: 125%;
+        font-weight: bold;
+    }
+
+    .previous::after {
+        content: '<';
+    }
+
+    .next::after {
+        content: '>';
+    }
 }
 
 /* ABOUT ME SECTION */
 
 #aboutMe {
-    position: relative;
     align-items: center;
     display: flex;
-    width: 90%;
-    padding: 2rem 0;
-    margin: 0 auto;
-    padding-top: 8.5rem;
+    justify-content: center;
+    width: 100%;
+    padding-top: 9rem;
     border-radius: 5px;
+    background-color: #ffffff;
 }
 
 #aboutMe article {
@@ -202,9 +268,25 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 560px) {
     #aboutMe {
-        flex-direction: column;
+        padding-top: 11rem;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+
+    #aboutMe {
+        flex-direction: column-reverse;
+    }
+
+    #aboutMe article {
+        width: 100%;
+    }
+
+    #aboutMe img {
+        width: 50%;
+        padding-top: 2rem;
     }
   }
 /* MY SKILLS SECTION */
@@ -338,10 +420,12 @@ nav ul li a:hover {
 
     #contact {
         flex-direction: column;
+        justify-content: center;
     }
 
     #contact article {
         width: 100%;
         margin-bottom: 2rem;
+        margin-right: 0;
     }
 }

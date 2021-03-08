@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>My portfolio project</title>
         <meta name="description" content="Maciej Walecki's portfolio site. See my skills, projects and more!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="script.js" defer></script>
         <link href="styles.css" type="text/css" rel="stylesheet">
         <link href="css/all.min.css" rel="stylesheet">
@@ -19,10 +20,10 @@
                 <i class="fas fa-bars"></i>
                 <nav>
                     <ul>
-                        <li><a href="index.html">About Me</a></li>
-                        <li><a href="index.html#mySkills">My skills</a></li>
-                        <li><a href="my_projects.html">My projects</a></li>
-                        <li><a href="my_projects.html">Contact</a></li>
+                        <li><a class="previous" href="index.html">About Me</a></li>
+                        <li class="toHide"><a href="index.html#mySkills">My skills</a></li>
+                        <li class="toHide"><a href="my_projects.html">My projects</a></li>
+                        <li><a class="next" href="my_projects.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -48,7 +49,6 @@
             </article>
             <div id="contactsContainer">
                 <ul>
-                    <li><strong>E-mail</strong> : maciejwalecki99@gmail.com<br><br><strong>Tel</strong>.: 123 456 789</li>
                     <li><i class="fab fa-facebook-square"></i></li>
                     <li><i class="fab fa-github-square"></i></li>
                     <li><i class="fab fa-linkedin"></i></li>
