@@ -8,7 +8,7 @@ const floraArrow = document.getElementById('floraArrow');
 
 
 const show = (picture, title, arrow) => {
-    arrow.style.transform = 'rotate(180deg)';
+    arrow.style.transform = 'rotate(180deg)'; // for rotating arrow
     picture.style.maxHeight = '400px';
         title.removeEventListener('click', function(){
         show(picture);
@@ -19,7 +19,7 @@ const show = (picture, title, arrow) => {
 }
 
 const hide = (picture, title, arrow) => {
-    arrow.style.transform = 'rotate(0)';
+    arrow.style.transform = 'rotate(0)'; // for rotating arrow
     picture.style.maxHeight = 0;
     title.removeEventListener('click', function(){
         hide(picture);

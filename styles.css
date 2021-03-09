@@ -73,7 +73,8 @@ header h1 {
     margin-left: 3rem;
     color: #ffffff;
     position: relative;
-    padding: 1rem;
+    padding: 1.2rem;
+    text-align: center;
 }
 
 header h1::before {
@@ -98,7 +99,7 @@ header h1::after {
     border-right: 2px solid black;
 }
 
-/* NAV BAR */
+/* nav bar and menu button */
 
 #menuButton {
     display: flex;
@@ -108,9 +109,11 @@ header h1::after {
     height: 100%;
     align-items: center;
     justify-content: center;
-    color: #f5f5f5;
     position: relative;
+    color: #ffffff;
 }
+
+
 #menuButton::after {
     position: absolute;
     content: "";
@@ -222,6 +225,11 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-width: 415px) {
+
+    header h1 {
+        width: 90%;
+    }
+
     .toHide {
         display: none;
     }
@@ -244,6 +252,8 @@ nav ul li a:hover {
         content: '>';
     }
 }
+
+
 
 /* ABOUT ME SECTION */
 
@@ -268,12 +278,6 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 560px) {
-    #aboutMe {
-        padding-top: 11rem;
-    }
-}
-
 @media only screen and (max-width: 770px) {
 
     #aboutMe {
@@ -285,10 +289,23 @@ nav ul li a:hover {
     }
 
     #aboutMe img {
-        width: 50%;
+        width: 65%;
         padding-top: 2rem;
     }
   }
+
+@media only screen and (max-width: 560px) {
+    #aboutMe {
+        padding-top: 11rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #aboutMe {
+        padding-top: 14rem;
+    }
+}
+    
 /* MY SKILLS SECTION */
 
 #mySkills {
@@ -317,24 +334,38 @@ nav ul li a:hover {
     font-size: 350%;
 }
 
+@media only screen and (max-width: 320px) {
+
+    .skillsContainer {
+        flex-direction: column;
+    }
+
+    .skillsContainer i {
+        padding: 0.6rem 0;
+    }
+}
+
 /* MY PROJECTS SECTION */
 
 #myProjects {
-    padding-top: 10rem;
+    padding-top: 9rem;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
+    background-color: #ffffff;
 }
 
 #myProjects article {
-    width: 30%;
+    width: 100%;
+    margin-bottom: 1.5rem;
 }
 
 #myProjects ul {
     list-style-type: none;
     width: auto;
-    width: 50%;
+    width: 100%;
 }
 
 #myProjects ul li {
@@ -373,20 +404,15 @@ nav ul li a:hover {
     transition: transform 0.1s ease-in-out;
 }
 
-@media only screen and (max-width: 1200px) {
-
+@media only screen and (max-width: 560px) {
     #myProjects {
-        flex-direction: column;
-        align-items: center;
+        padding-top: 11rem;
     }
+}
 
-    #myProjects article {
-        margin-bottom: 1.5rem;
-        width: 100%;
-    }
-
-    #myProjects ul {
-        width: 100%;
+@media only screen and (max-width: 350px) {
+    #myProjects {
+        padding-top: 14rem;
     }
 }
 /* CONTACT ME SECTION */
@@ -414,6 +440,7 @@ nav ul li a:hover {
 
 #contactsContainer ul li i {
     font-size: 350%;
+    color: black;
 }
 
 @media only screen and (max-width: 980px) {
@@ -427,5 +454,12 @@ nav ul li a:hover {
         width: 100%;
         margin-bottom: 2rem;
         margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 315px) {
+
+    #contactsContainer ul {
+        flex-direction: column;
     }
 }
