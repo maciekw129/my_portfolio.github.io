@@ -358,14 +358,11 @@ nav ul li a:hover {
 }
 
 #myProjects article {
-    width: 100%;
     margin-bottom: 1.5rem;
 }
 
 #myProjects ul {
     list-style-type: none;
-    width: auto;
-    width: 100%;
 }
 
 #myProjects ul li {

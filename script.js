@@ -9,7 +9,7 @@ const floraArrow = document.getElementById('floraArrow');
 
 const show = (picture, title, arrow) => {
     arrow.style.transform = 'rotate(180deg)'; // for rotating arrow
-    picture.style.maxHeight = '400px';
+    picture.style.maxHeight = '600px';
         title.removeEventListener('click', function(){
         show(picture);
     })
