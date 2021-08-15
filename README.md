@@ -1,10 +1,10 @@
 # Portfolio website
 My first bigger individual project. It presents the most important information about me.
 ## Table of Contents
-* General Info
-* Technologies
-* Website Presentation
-* Project Status
+* [General Info](#general-info)
+* [Technologies](#technologies)
+* [Website Presentation](#website-presentation)
+* [Project Status](#project-status)
 ## General Info
 I have made this website to challange myself during a CodeCademy frontend path. Website has informations about me like: my name, age, why I started programming, my skills at that time and some more. This project is composed of two subpages, between which you can move through sliding navbar.
 ## Technologies
