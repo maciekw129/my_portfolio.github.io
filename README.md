@@ -4,6 +4,7 @@ My first bigger individual project. It presents the most important information a
 * General Info
 * Technologies
 * Website Presentation
+* Project Status
 ## General Info
 I have made this website to challange myself during a CodeCademy frontend path. Website has informations about me like: my name, age, why I started programming, my skills at that time and some more. This project is composed of two subpages, between which you can move through sliding navbar.
 ## Technologies
@@ -18,5 +19,6 @@ I have made this website to challange myself during a CodeCademy frontend path. 
 ![4](https://user-images.githubusercontent.com/79579229/129489681-42acf947-e0bb-4341-bb14-7db9fb66a9d1.jpg)
 
 You can also see it live here: https://maciekw129.github.io/my_portfolio.github.io/index.html
-
+## Project Status
+This project is already completed.
 
