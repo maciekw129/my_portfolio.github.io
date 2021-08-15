@@ -1,5 +1,5 @@
 # Portfolio website
-My first bigger individual project. It presents the most important information about me.
+My first bigger individual project. It presents the most important informations about me.
 ## Table of Contents
 * [General Info](#general-info)
 * [Technologies](#technologies)
